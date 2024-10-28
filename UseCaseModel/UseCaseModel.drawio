@@ -1,0 +1,170 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.5.1 Safari/605.1.15" version="24.8.0">
+  <diagram id="5W8eVVAA-L5P-t_W6CSy" name="Page-1">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="4MjJ-25kIHgVZQyjxiN5-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;" edge="1" parent="1" source="3O3-FrwVx1ogFLJ1uLDH-2" target="CUmQ5qDtKgj7bNhXlXEf-16">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="600" />
+              <mxPoint x="140" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3O3-FrwVx1ogFLJ1uLDH-2" value="&lt;b&gt;Manager&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="70" y="570" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3O3-FrwVx1ogFLJ1uLDH-15" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D4D4D4;" vertex="1" parent="1">
+          <mxGeometry x="240" y="100" width="340" height="760" as="geometry" />
+        </mxCell>
+        <mxCell id="3O3-FrwVx1ogFLJ1uLDH-17" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Membership Registration&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="180" width="250" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3O3-FrwVx1ogFLJ1uLDH-18" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Membership Renewal/Cancellation&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="275" y="390" width="265" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="3O3-FrwVx1ogFLJ1uLDH-31" value="&lt;b&gt;&lt;font face=&quot;Verdana&quot;&gt;Notes:&lt;/font&gt;&lt;/b&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px;&quot; face=&quot;PMM96DK0hp6uboRltSxZ&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; face=&quot;PMM96DK0hp6uboRltSxZ&quot;&gt;1. The Health Club Management System is designed to streamline membership management, facilitate user engagement, and provide functionality for both new users and current members.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; face=&quot;PMM96DK0hp6uboRltSxZ&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; face=&quot;PMM96DK0hp6uboRltSxZ&quot;&gt;2. The system accommodates three main users: New Customers, Members, and Staff/Management.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; face=&quot;PMM96DK0hp6uboRltSxZ&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; face=&quot;PMM96DK0hp6uboRltSxZ&quot;&gt;3. New Customers can register and choose their membership plan. Members can manage their account and check-in, cancel, renew, or pay. Staff/Management can oversee and manage users account and generate reports.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; face=&quot;PMM96DK0hp6uboRltSxZ&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; face=&quot;PMM96DK0hp6uboRltSxZ&quot;&gt;4. All user interactions are stored in a centralized database called the system.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; face=&quot;PMM96DK0hp6uboRltSxZ&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; face=&quot;PMM96DK0hp6uboRltSxZ&quot;&gt;5. The system includes automated notifications for payments, membership renewals, new membership, and inactivity.&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot; face=&quot;PMM96DK0hp6uboRltSxZ&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=-6;fillColor=#FFFFFF;" vertex="1" parent="1">
+          <mxGeometry x="60" y="920" width="720" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="Mm86J7xJ8AcbR6BuxI0V-4" value="Notes:&lt;div&gt;Check-in includes verification of a valid barcode/userID.&amp;nbsp;&lt;/div&gt;" style="shape=note;whiteSpace=wrap;html=1;size=14;verticalAlign=top;align=left;spacingTop=-6;fillColor=#D4D4D4;" vertex="1" parent="1">
+          <mxGeometry x="670" y="50" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="4MjJ-25kIHgVZQyjxiN5-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CUmQ5qDtKgj7bNhXlXEf-5" target="CUmQ5qDtKgj7bNhXlXEf-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="220" />
+              <mxPoint x="180" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MjJ-25kIHgVZQyjxiN5-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;" edge="1" parent="1" target="3O3-FrwVx1ogFLJ1uLDH-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="220" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="150" y="221" />
+              <mxPoint x="180" y="221" />
+              <mxPoint x="180" y="433" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MjJ-25kIHgVZQyjxiN5-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;" edge="1" parent="1" target="CUmQ5qDtKgj7bNhXlXEf-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="75" y="220" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="180" y="220" />
+              <mxPoint x="180" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CUmQ5qDtKgj7bNhXlXEf-5" value="&lt;b&gt;User(New Customer&lt;/b&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;or Member)&lt;/b&gt;&lt;/div&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="60" y="190" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CUmQ5qDtKgj7bNhXlXEf-10" value="&lt;b&gt;&lt;font style=&quot;font-size: 24px;&quot;&gt;Health Club Use Case Model&amp;nbsp;&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="288.75" y="50" width="242.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="4MjJ-25kIHgVZQyjxiN5-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;" edge="1" parent="1" source="CUmQ5qDtKgj7bNhXlXEf-11" target="CUmQ5qDtKgj7bNhXlXEf-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="400" />
+              <mxPoint x="160" y="320" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MjJ-25kIHgVZQyjxiN5-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="CUmQ5qDtKgj7bNhXlXEf-11" target="CUmQ5qDtKgj7bNhXlXEf-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="400" />
+              <mxPoint x="160" y="540" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CUmQ5qDtKgj7bNhXlXEf-11" value="&lt;b&gt;(Staff Member)&lt;/b&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=2;perimeterSpacing=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="370" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="CUmQ5qDtKgj7bNhXlXEf-12" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Health Club Management System&lt;br&gt;The management system that handles all interactions&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="300" y="120" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="CUmQ5qDtKgj7bNhXlXEf-13" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;User Check-in&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="280" width="255" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CUmQ5qDtKgj7bNhXlXEf-14" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Account Management&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="267.5" y="610" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CUmQ5qDtKgj7bNhXlXEf-15" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Notifications&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="500" width="275" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CUmQ5qDtKgj7bNhXlXEf-16" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Report Generation&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="265" y="730" width="275" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="CUmQ5qDtKgj7bNhXlXEf-19" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;endArrow=classic;html=1;curved=0;rounded=0;endSize=8;startSize=8;exitX=0.556;exitY=0.661;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;" edge="1" parent="1" source="CUmQ5qDtKgj7bNhXlXEf-5" target="3O3-FrwVx1ogFLJ1uLDH-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="140" y="220" as="sourcePoint" />
+            <mxPoint x="190" y="170" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="220" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MjJ-25kIHgVZQyjxiN5-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.033;entryY=0.691;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;" edge="1" parent="1" source="3O3-FrwVx1ogFLJ1uLDH-2" target="CUmQ5qDtKgj7bNhXlXEf-14">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="600" />
+              <mxPoint x="140" y="665" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MjJ-25kIHgVZQyjxiN5-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.021;entryY=0.621;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;" edge="1" parent="1" source="3O3-FrwVx1ogFLJ1uLDH-2" target="CUmQ5qDtKgj7bNhXlXEf-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="200" y="600" />
+              <mxPoint x="200" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MjJ-25kIHgVZQyjxiN5-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.023;entryY=0.353;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;" edge="1" parent="1" target="3O3-FrwVx1ogFLJ1uLDH-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="105" y="600" as="sourcePoint" />
+            <mxPoint x="269.9999999999999" y="429.8399999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="140" y="600" />
+              <mxPoint x="140" y="420" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MjJ-25kIHgVZQyjxiN5-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.004;entryY=0.388;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;" edge="1" parent="1" source="3O3-FrwVx1ogFLJ1uLDH-2" target="CUmQ5qDtKgj7bNhXlXEf-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="600" />
+              <mxPoint x="140" y="311" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MjJ-25kIHgVZQyjxiN5-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.004;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=3;" edge="1" parent="1" source="3O3-FrwVx1ogFLJ1uLDH-2" target="3O3-FrwVx1ogFLJ1uLDH-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="140" y="600" />
+              <mxPoint x="140" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MjJ-25kIHgVZQyjxiN5-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.118;entryY=0.145;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=3;" edge="1" parent="1" source="CUmQ5qDtKgj7bNhXlXEf-11" target="3O3-FrwVx1ogFLJ1uLDH-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="160" y="400" />
+              <mxPoint x="160" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="4MjJ-25kIHgVZQyjxiN5-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.118;entryY=0.303;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=3;" edge="1" parent="1" source="CUmQ5qDtKgj7bNhXlXEf-5" target="3O3-FrwVx1ogFLJ1uLDH-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="180" y="220" />
+              <mxPoint x="180" y="330" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

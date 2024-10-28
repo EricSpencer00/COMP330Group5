@@ -1,1 +1,5 @@
 # COMP330Group5
+
+This is an overview project plan for the new membership management system for a health club, SoftEng. The health and exercise club are looking for an improved membership management system that simplifies the process of joining, accessing, and renewing memberships. The club offers flexible membership durations, ranging from 6 months to 3 years, with fees based on the selected membership length. Members have unlimited access to the club during their active membership period and can check in using a physical card or a phone scan. 
+
+To enhance the previous system, the system should notify members in advance of upcoming membership expirations and allow them to renew immediately. Monthly renewal reminders will be sent to members whose memberships are expiring in the next month, and renewals will be set to the same duration and rate as the previous term. Additionally, the club manager needs the ability to generate reports, including lists of inactive members who haven't visited the club in the past 30 days, and reports of frequent users to engage them more effectively.  
