@@ -38,7 +38,8 @@ N/A
 |------------------|---------------------|
 | 1. User starts the registration process | |
 | 2. System encounters an error during the registration process | |
-| 3. User encounters an error with the registration process | 3. System reports the error to the manager or staff | |
+| 3. User encounters an error with the registration process ||
+|| 4. System reports the error to the manager or staff | |
 | 5. Manager accesses the system to fix the issue | |
 | | 6. System registers the user and completes the registration process |
 

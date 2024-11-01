@@ -35,7 +35,8 @@ N/A
 |------------------|---------------------|
 | 1. User requests data to be changed | |
 | 2. Manager approves request | |
-| 3. Manager enters the change to the System knowing which one to change | The System confirms the request |
+| 3. Manager enters the change to the System knowing which one to change ||
+||4.  The System confirms the request |
 
 ---
 

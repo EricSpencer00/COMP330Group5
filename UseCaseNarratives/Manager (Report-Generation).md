@@ -18,10 +18,14 @@
 
 | **Actor Action** | **System Response** |
 |------------------|---------------------|
-| 1. Manager navigates to the "Report Generation" section in the system. | The system displays available report types (e.g., renewals/cancellations, membership growth). |
-| 2. Manager makes a report selection. | The system prompts the manager for specific report parameters, such as date or membership type. |
-| 3. Manager enters parameters and confirms. | The system retrieves relevant data, generates the report, and displays it to the manager. |
-| 4. Manager reviews the report and chooses to save or download it. | The system performs the chosen action and logs the report activity. |
+| 1. Manager navigates to the "Report Generation" section in the system. ||
+||2.  The system displays available report types (e.g., renewals/cancellations, membership growth). |
+| 3. Manager makes a report selection. ||
+||4.  The system prompts the manager for specific report parameters, such as date or membership type. |
+| 5. Manager enters parameters and confirms. ||
+||6.  The system retrieves relevant data, generates the report, and displays it to the manager. |
+| 7. Manager reviews the report and chooses to save or download it. ||
+||8.  The system performs the chosen action and logs the report activity. |
 
 ---
 
@@ -30,5 +34,5 @@
 | **Line** | **Details** |
 |----------|-------------|
 | **Line 1** | Manager attempts to generate a report, but the system identifies missing data required for report generation. |
-| **Line 2** | The system notifies the manager about missing data. |
-| **Line 3** | The manager decides to proceed with available data or cancel the report generation. |
+| **Line 3** | The system notifies the manager about missing data. |
+| **Line 5** | The manager decides to proceed with available data or cancel the report generation. |

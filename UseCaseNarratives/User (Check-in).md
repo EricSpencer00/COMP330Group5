@@ -36,15 +36,17 @@ User is recognized by the System and successfully enters the Health Club.
 
 | **Actor Action** | **System Response** |
 |------------------|---------------------|
-| User physically scans MemberID at the Health Club front desk. | |
-| User tells the Manager their MemberID. | System logs User’s profile with a time and date stamp. System retrieves and displays User’s profile photo. |
-| Manager manually enters the MemberID in place of the barcode. | System logs User’s profile with a time and date stamp. System retrieves and displays User’s profile photo. |
+| 1. User physically scans MemberID at the Health Club front desk. | |
+||2. System logs User’s profile with a time and date stamp. System retrieves and displays User’s profile photo. |
+|| 3. System logs User’s profile with a time and date stamp. 
+|| 4. System retrieves and displays User’s profile photo. |
 
 ---
 
 ## Alternative Flow of Events  
 
 - **Line 1:** User is not recognized by the System.  
-- **Line 3:** User is not recognized by the System.  
 - **Line 1:** System displays an error message that the MemberID is invalid.  
-- **Line 2:** System displays an error message that the MemberID is invalid.
+- **Line 1:** Manager can also signin a User
+- **Line 1:** User checks in by telling staff their ID number, full name, or other distinguishing characteristic.  
+

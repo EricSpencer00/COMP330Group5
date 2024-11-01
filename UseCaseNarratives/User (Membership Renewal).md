@@ -36,12 +36,14 @@ N/A
 
 | **Actor Action** | **System Response** |
 |------------------|---------------------|
-| User requests renewal of membership |  |
-| Manager requests a valid ID or text/email code |  |
-| Manager requests renewal |  |
-| Manager requests User’s profile | System requests valid ID to proceed. |
-| System allows Manager to proceed after a valid ID or code has been presented | System changes User’s profile to active status. |
-|  | System confirms the payment and sends a receipt to the preferred contact method on file. |
+| 1. User requests renewal of membership |  |
+| 2. Manager requests a valid ID or text/email code |  |
+| 3. Manager requests renewal |  |
+| 4. Manager requests User’s profile ||
+|| 5. System requests valid ID to proceed. |
+| 6. System allows Manager to proceed after a valid ID or code has been presented ||
+|| 7. System changes User’s profile to active status. |
+|  | 8. System confirms the payment and sends a receipt to the preferred contact method on file. |
 
 ---
 
