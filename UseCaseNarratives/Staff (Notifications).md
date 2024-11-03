@@ -1,25 +1,47 @@
-# Staff (Notifications) - Membership Status Alert
-* Actors: Staff, User
-* This use case describes the notification process when a user tries to check-in, where notifications are sent to the front-desk staff, denoting their current membership status.
+# Use Case Narrative – Notifications
 
-# Preconditions:
-- User has an account within the database.
-- User’s status is accessible in the database (valid or invalid), else the staff will receive an error.
+## Use Case: Staff Receives Membership Status Alert During User Check-In
 
-# Flow Scenario:
-1. User approaches check-in at the front desk.
-2. The user provides their ID.
-3.The system verifies the status.
-4. If the status is valid:
-  * Notification is sent to staff at the check-in desk that the user can enter.
-  * Staff allows the user to enter, completing the process.
-5. If the status is not valid:
-  * Notification is sent to staff at the check-in desk that the user can enter.
-  * Users receive notification to renew their membership.
-  * Repeat from step 2 if the user renewed their membership.
-6. If the system is unable to verify membership status, an error message is sent.
+**Actors**: Staff, User, System
 
-# Postconditions:
-- For valid membership, the user is allowed access, and the check-in is stored in the database.
-- For invalid memberships, the system alerts the staff, but if the user renews their membership, they can check-in again.
+**Purpose**: To notify staff of a user's membership status during check-in, allowing them to determine if the user is eligible to enter the facility.
 
+**Requirements Implemented**: 4, 2, 3
+
+### Overview
+This Use Case describes the process of notifying front-desk staff of a user’s membership status when they attempt to check in. It includes actions taken when the user’s membership is valid, invalid, or unverified due to system errors.
+
+**Type**: Essential
+
+### Preconditions
+- The user has an account within the system database.
+- The user’s membership status (valid or invalid) is accessible in the database; otherwise, an error message is triggered.
+
+### Postconditions
+- **Valid membership**: The user is granted access, and the check-in is recorded in the database.
+- **Invalid membership**: The staff is alerted, and if the user renews their membership, they can proceed to check in again.
+- **Error**: The system sends an error message, requiring staff to verify manually or address the issue.
+
+**Special Requirements**: N/A
+
+## Flow of Events
+
+| Actor Action | System Response |
+|--------------|------------------|
+| 1. The user approaches the front desk for check-in. | |
+| 2. The user provides their ID to the system. | |
+| | 3. The system checks if the membership status is valid. |
+| | 4. The system sends a notification to the staff indicating that the user’s membership is invalid. |
+| 5. Both staff and user receive the notification, denoting the status of the user's membership. | |
+| 6. The staff checks the user’s current membership status. If invalid, the user has the option to renew their membership and enter; otherwise, the process is terminated. | |
+| 7. The staff allows the user, completing the check-in process. | |
+
+## Alternative Flow of Events
+
+**Line 6**: If the user’s membership is invalid, and they decide not to renew their membership:
+- The system maintains the user’s status as invalid.
+- The check-in process is terminated, and the user is not granted access.
+
+**Line 3**: If the system is unable to verify the user’s membership status due to technical issues:
+- The system sends an error message to the staff.
+- The staff may perform a manual lookup in the system using the user’s name and birthday.
