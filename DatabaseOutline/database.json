@@ -1,0 +1,91 @@
+{
+  "Users": [
+    {
+      "ID": 1,
+      "username": "johndoe",
+      "PASSWORD_HASH": "hashpassword123",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@example.com",
+      "phoneNumber": "123-456-7890",
+      "address": "123 Main St, Anytown, USA",
+      "dateOfBirth": "1990-01-01",
+      "role": "Member",
+      "createdAt": "2023-11-10T10:00:00",
+      "updatedAt": "2023-11-10T10:00:00"
+    }
+  ],
+  "Subscriptions": [
+    {
+      "ID": 1,
+      "subscriptionType": "1 Year",
+      "subscriptionFee": 99.99,
+      "subscriptionStartDate": "2023-01-01",
+      "subscriptionEndDate": "2023-12-31",
+      "subscriptionStatus": "Active",
+      "QR_code": "Base64EncodedQR"
+    }
+  ],
+  "CheckIns": [
+    {
+      "CheckInID": 1,
+      "UserID": 1,
+      "CheckInTime": "2023-11-10T10:00:00",
+      "CheckOutTime": "2023-11-10T12:00:00"
+    }
+  ],
+  "Notifications": [
+    {
+      "NotificationID": 1,
+      "UserID": 1,
+      "NotificationType": "Renewal",
+      "Content": "Your subscription is due for renewal.",
+      "SentDate": "2023-11-01T10:00:00",
+      "PreferredMethod": "Email",
+      "Status": "Sent"
+    }
+  ],
+  "Cancellations": [
+    {
+      "CancellationID": 1,
+      "UserID": 1,
+      "CancellationDate": "2023-11-10T10:00:00",
+      "Reason": "Moving out of the city",
+      "ProcessedBy": 2,
+      "Status": "Completed"
+    }
+  ],
+  "Payments": [
+    {
+      "PaymentID": 1,
+      "UserID": 1,
+      "PaymentDate": "2023-11-10T10:00:00",
+      "Amount": 50.00,
+      "Status": "Completed"
+    }
+  ],
+  "PaymentMethods": [
+    {
+      "PaymentMethodID": 1,
+      "UserID": 1,
+      "CardType": "Visa",
+      "CardNumberHash": "hashedcardnumber",
+      "LastFourDigits": "1234",
+      "ExpirationMonth": 12,
+      "ExpirationYear": 2025,
+      "BillingAddress": "123 Main St, Anytown, USA",
+      "PaymentToken": "token12345",
+      "CreatedAt": "2023-11-10T10:00:00",
+      "UpdatedAt": "2023-11-10T10:00:00"
+    }
+  ],
+  "AuditLog": [
+    {
+      "AuditID": 1,
+      "UserID": 1,
+      "Action": "User Login",
+      "ActionTime": "2023-11-10T10:00:00",
+      "Details": "User logged in successfully."
+    }
+  ]
+}
