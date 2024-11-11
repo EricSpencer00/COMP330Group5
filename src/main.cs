@@ -14,9 +14,9 @@ public class Person
     
     public enum Status
     {
-        Active = 1,
-        Inactive = 2,
-        Suspended = 3 // Adjust based on your requirements
+        ActiveMembership = 1,
+        InactiveMembership = 2,
+    
     }
     public Status PersonStatus { get; set; }
 
@@ -30,4 +30,6 @@ public class Person
 
     public DateTime DateCreated { get; set; } // DateTime type is suitable for MM/DD/YYYY
     public DateTime? LastCheckedIn { get; set; } // Nullable DateTime to allow for missing check-ins
+    public List<DateTime?> CheckinHistory { get; set; } = new List<DateTime?>(); // List of nullable DateTimes for check-in history
+
 }
