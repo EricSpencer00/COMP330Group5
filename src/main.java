@@ -4,10 +4,12 @@
  * The Gym Check-in System will have various functions used to perform operations on the database
  */
 
+import java.util.*;
+
 class User {
     private String name;
     private String address;
-    private int userID;
+    private String userID;
     private String userPassword;
     private String validID;
 
@@ -61,7 +63,7 @@ class User {
         this.address = address;
     }
 
-    public void setUserID(String userID) {
+    public void setUserID(String  userID) {
         this.userID = userID;
     }
 
@@ -88,7 +90,7 @@ class Staff extends User {
         // Register a new member
     }
 
-    public boolean verifyID() {
+    public void verifyID() {
         // Verify the ID of a user
     }
 
@@ -112,15 +114,15 @@ class Manager extends Staff {
 }
 
 class Database {
-    private List<User> users = new ArrayList<User>();
-    private List<Membership> memberships = new ArrayList<Membership>();
-    private List<Notification> notifications = new ArrayList<Notification>();
+    private final List<User> users = new ArrayList<>();
+    private final List<Membership> memberships = new ArrayList<>();
+    private final List<Notification> notifications = new ArrayList<>();
 
     public void storeData(User user) {
         users.add(user);
     }
 
-    public User getData(String userID) {
+    public User getData(int userID) {
         for (User user : users) {
             if (user.getUserID().equals(userID)) {
                 return user;
@@ -209,7 +211,7 @@ public class Main {
         database.storeData(staff);
         database.storeData(manager);
     
-        User retrievedUser = database.getData("123");
+        User retrievedUser = database.getData(123);
         System.out.println(retrievedUser.getName());
     }
 }
