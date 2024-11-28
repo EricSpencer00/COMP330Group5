@@ -38,8 +38,7 @@ User is recognized by the System and successfully enters the Health Club.
 |------------------|---------------------|
 | 1. User physically scans MemberID at the Health Club front desk. | |
 ||2. System logs User’s profile with a time and date stamp. System retrieves and displays User’s profile photo. |
-|| 3. System logs User’s profile with a time and date stamp. 
-|| 4. System retrieves and displays User’s profile photo. |
+
 
 ---
 
