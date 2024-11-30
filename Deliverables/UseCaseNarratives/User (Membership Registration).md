@@ -1,5 +1,4 @@
-# Use Case Narrative Template  
-*(use all fields as listed, if no information is needed for some field, enter N/A)*
+# User Membership Registration  
 
 ---
 
