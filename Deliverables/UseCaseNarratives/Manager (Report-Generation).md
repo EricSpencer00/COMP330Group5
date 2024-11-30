@@ -1,4 +1,4 @@
-# Manager Generating a Report  
+# Manager Report Generation
 
 | **Shape** | **Details** |
 |-----------|-------------|
