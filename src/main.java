@@ -12,27 +12,45 @@ class User {
     private String userID;
     private String userPassword;
     private String validID;
+    private boolean isRegistered;
+    private boolean isCheckedIn;
 
-    public User(String name, String address, String userID, String userPassword, String validID) {
+    public User(String name, String address, String userID, String userPassword, String validID, boolean isRegistered, boolean isCheckedIn) {
         this.name = name;
         this.address = address;
         this.userID = userID;
         this.userPassword = userPassword;
         this.validID = validID;
+        this.isRegistered = isRegistered;
+        this.isCheckedIn = false;
     }
 
     public void register() {
-        // Register a new user
+        if (!isRegistered) {
+            // Register a new user
+            isRegistered = true;
+        } else {
+            System.out.println("User is already registered");
+        }
     }
 
     public void checkIn() {
-        // Check in a user
+        if (isRegistered && !isCheckedIn) {
+            // Check in a user
+            isCheckedIn = true;
+        } else {
+            System.out.println("User is not registered or is already checked in");
+        }
     }
 
     public void cancelMembership() {
-        // Cancel a user's membership
+        if  (isRegistered) {
+            // Cancel a user's membership
+            isRegistered = false;
+        } else {
+            System.out.println("User is not registered");
+        }
     }
-
 
     // Getters and Setters 
     public String getName() {
@@ -55,6 +73,14 @@ class User {
         return validID;
     }
 
+    public boolean isRegistered() {
+        return isRegistered;
+    }
+
+    public boolean isCheckedIn() {
+        return isCheckedIn;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -74,14 +100,22 @@ class User {
     public void setValidID(String validID) {
         this.validID = validID;
     }
+
+    public void setRegistered(boolean isRegistered) {
+        this.isRegistered = isRegistered;
+    }
+
+    public void setCheckedIn(boolean isCheckedIn) {
+        this.isCheckedIn = isCheckedIn;
+    }
 }
 
 class Staff extends User {
     private int staffID;
     private String role;
 
-    public Staff(String name, String address, String userID, String userPassword, String validID, int staffID, String role) {
-        super(name, address, userID, userPassword, validID);
+    public Staff(String name, String address, String userID, String userPassword, String validID, int staffID, String role, boolean isRegistered, boolean isCheckedIn) {
+        super(name, address, userID, userPassword, validID, true, false);
         this.staffID = staffID;
         this.role = role;
     }
@@ -101,7 +135,7 @@ class Staff extends User {
 
 class Manager extends Staff {
     public Manager(String name, String address, String userID, String userPassword, String validID, int staffID, String role) {
-        super(name, address, userID, userPassword, validID, staffID, role);
+        super(name, address, userID, userPassword, validID, staffID, role, true, false);
     }
 
     public void generateReport() {
@@ -122,7 +156,7 @@ class Database {
         users.add(user);
     }
 
-    public User getData(int userID) {
+    public User getData(String userID) {
         for (User user : users) {
             if (user.getUserID().equals(userID)) {
                 return user;
@@ -200,18 +234,44 @@ class Notification extends Database {
 
 public class Main {
     public static void main(String[] args) {
-        User user = new User("John Doe", "123 Main St", "123", "password", "validID");
+        // Create a user and perform actions
+        User user = new User("John Doe", "123 Main St", "123", "password", "validID", false, false);
+        System.out.println("Registering user: " + user.getName());
         user.register();
-        Staff staff = new Staff("Jane Doe", "456 Main St", "456", "password", "validID", 789, "staff");
-        Manager manager = new Manager("John Smith", "789 Main St", "789", "password", "validID", 123, "manager");
-        staff.registerMember();
 
+        System.out.println("Attempting to check in user: " + user.getName());
+        user.checkIn();
+
+        System.out.println(user.getName() + "'s check-in status: " + user.isCheckedIn());
+
+        System.out.println("Cancelling membership for user: " + user.getName());
+        user.cancelMembership();
+
+        // Create staff and manager instances
+        Staff staff = new Staff("Jane Doe", "456 Main St", "456", "password", "validID", 789, "staff", true, false);
+        System.out.println("Staff member created: " + staff.getName());
+
+        Manager manager = new Manager("John Smith", "789 Main St", "789", "password", "validID", 123, "manager");
+        System.out.println("Manager created: " + manager.getName());
+
+        // Use database to store users
         Database database = new Database();
         database.storeData(user);
         database.storeData(staff);
         database.storeData(manager);
-    
-        User retrievedUser = database.getData(123);
-        System.out.println(retrievedUser.getName());
+
+        // Retrieve a user by ID
+        User retrievedUser = database.getData("123");
+        if (retrievedUser != null) {
+            System.out.println("Retrieved user: " + retrievedUser.getName());
+        } else {
+            System.out.println("User not found.");
+        }
+
+        // Test cancellation again
+        System.out.println(user.getName() + " is registered: " + user.isRegistered());
+        System.out.println("Cancelling " + user.getName() + "'s membership again...");
+        user.cancelMembership();
+        System.out.println(user.getName() + " is registered: " + user.isRegistered());
     }
 }
