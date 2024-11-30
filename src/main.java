@@ -234,44 +234,31 @@ class Notification extends Database {
 
 public class Main {
     public static void main(String[] args) {
-        // Create a user and perform actions
+        // Use Case 1: User Check-in
+        System.out.println("=== Use Case 1: User Check-in ===");
         User user = new User("John Doe", "123 Main St", "123", "password", "validID", false, false);
+
         System.out.println("Registering user: " + user.getName());
         user.register();
 
-        System.out.println("Attempting to check in user: " + user.getName());
+        System.out.println("Checking in user: " + user.getName());
         user.checkIn();
-
         System.out.println(user.getName() + "'s check-in status: " + user.isCheckedIn());
 
-        System.out.println("Cancelling membership for user: " + user.getName());
-        user.cancelMembership();
+        System.out.println("\n=== End of Use Case 1 ===\n");
 
-        // Create staff and manager instances
-        Staff staff = new Staff("Jane Doe", "456 Main St", "456", "password", "validID", 789, "staff", true, false);
-        System.out.println("Staff member created: " + staff.getName());
-
+        // Use Case 2: Manager Cancels User Membership
+        System.out.println("=== Use Case 2: Manager Cancels User Membership ===");
         Manager manager = new Manager("John Smith", "789 Main St", "789", "password", "validID", 123, "manager");
-        System.out.println("Manager created: " + manager.getName());
-
-        // Use database to store users
-        Database database = new Database();
-        database.storeData(user);
-        database.storeData(staff);
-        database.storeData(manager);
-
-        // Retrieve a user by ID
-        User retrievedUser = database.getData("123");
-        if (retrievedUser != null) {
-            System.out.println("Retrieved user: " + retrievedUser.getName());
+        
+        System.out.println("Manager " + manager.getName() + " is canceling membership for user: " + user.getName());
+        if (user.isRegistered()) {
+            user.cancelMembership();
         } else {
-            System.out.println("User not found.");
+            System.out.println("Membership already canceled or user not registered.");
         }
+        System.out.println(user.getName() + " is registered: " + user.isRegistered());
 
-        // Test cancellation again
-        System.out.println(user.getName() + " is registered: " + user.isRegistered());
-        System.out.println("Cancelling " + user.getName() + "'s membership again...");
-        user.cancelMembership();
-        System.out.println(user.getName() + " is registered: " + user.isRegistered());
+        System.out.println("\n=== End of Use Case 2 ===");
     }
 }
