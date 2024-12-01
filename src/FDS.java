@@ -151,6 +151,7 @@ class Database {
     private final List<User> users = new ArrayList<>();
     private final List<Membership> memberships = new ArrayList<>();
     private final List<Notification> notifications = new ArrayList<>();
+    
 
     public void storeData(User user) {
         users.add(user);
@@ -168,31 +169,35 @@ class Database {
     public void archive() {
         // Archive data
     }
-}
 
-class Report extends Database {
-    private int reportNumber;
-    private String type;
-    private String content;
-
-    public Report(int reportNumber, String type, String content) {
-        this.reportNumber = reportNumber;
-        this.type = type;
-        this.content = content;
-    }
-
-    public void generate() {
-        // Generate a report
-    }
-
-    public void sortData() {
-        // Sort data
-    }
-
-    public void highlightInactivity() {
-        // Highlight inactivity
+    public void logCheckIn(String barcode, String time) {
+        // Log check-in
     }
 }
+
+// class Report extends Database {
+//     private int reportNumber;
+//     private String type;
+//     private String content;
+
+//     public Report(int reportNumber, String type, String content) {
+//         this.reportNumber = reportNumber;
+//         this.type = type;
+//         this.content = content;
+//     }
+
+//     public void generate() {
+//         // Generate a report
+//     }
+
+//     public void sortData() {
+//         // Sort data
+//     }
+
+//     public void highlightInactivity() {
+//         // Highlight inactivity
+//     }
+// }
 
 class Membership extends Database {
     private int barcode;
@@ -215,12 +220,14 @@ class Membership extends Database {
 class Notification extends Database {
     private String type;
     private String message;
-    private User recipient;
+    private User recipient; // User who will receive the notification
+    private Manager manager; // Manager who sent the notification
 
-    public Notification(String type, String message, User recipient) {
+    public Notification(String type, String message, User recipient, Manager manager) {
         this.type = type;
         this.message = message;
         this.recipient = recipient;
+        this.manager = manager;
     }
 
     public void send() {
@@ -232,7 +239,7 @@ class Notification extends Database {
     }
 }
 
-public class Main {
+public class FDS {
     public static void main(String[] args) {
         // Use Case 1: User Check-in
         System.out.println("=== Use Case 1: User Check-in ===");
