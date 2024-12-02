@@ -241,31 +241,71 @@ class Notification extends Database {
 
 public class FDS {
     public static void main(String[] args) {
-        // Use Case 1: User Check-in
-        System.out.println("=== Use Case 1: User Check-in ===");
-        User user = new User("John Doe", "123 Main St", "123", "password", "validID", false, false);
+        Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Registering user: " + user.getName());
-        user.register();
+        // Hardcoded Database Initialization
+        Database database = new Database();
+        User user1 = new User("John Doe", "123 Main St", "123", "password", "validID", true, false);
+        User user2 = new User("Jane Smith", "456 Elm St", "456", "securePassword", "validID2", true, false);
 
-        System.out.println("Checking in user: " + user.getName());
-        user.checkIn();
-        System.out.println(user.getName() + "'s check-in status: " + user.isCheckedIn());
+        // Adding hardcoded users to the database
+        database.storeData(user1);
+        database.storeData(user2);
 
-        System.out.println("\n=== End of Use Case 1 ===\n");
+        while (true) {
+            System.out.println("\n=== Gym Management System ===");
+            System.out.println("1. User Check-in");
+            System.out.println("2. Manager Cancel Membership");
+            System.out.println("3. Exit");
+            System.out.print("Enter your choice: ");
+            int choice = Integer.parseInt(scanner.nextLine());
 
-        // Use Case 2: Manager Cancels User Membership
-        System.out.println("=== Use Case 2: Manager Cancels User Membership ===");
-        Manager manager = new Manager("John Smith", "789 Main St", "789", "password", "validID", 123, "manager");
-        
-        System.out.println("Manager " + manager.getName() + " is canceling membership for user: " + user.getName());
-        if (user.isRegistered()) {
-            user.cancelMembership();
-        } else {
-            System.out.println("Membership already canceled or user not registered.");
+            switch (choice) {
+                case 1: // User Check-in
+                    System.out.print("Enter user barcode to check-in: ");
+                    String userBarcode = scanner.nextLine();
+                    User foundUser = database.getData(userBarcode);
+
+                    if (foundUser != null) {
+                        System.out.println("User found: " + foundUser.getName());
+                        if (!foundUser.isCheckedIn()) {
+                            foundUser.checkIn();
+                            System.out.println(foundUser.getName() + " successfully checked in.");
+                        } else {
+                            System.out.println(foundUser.getName() + " is already checked in.");
+                        }
+                    } else {
+                        System.out.println("No user found with barcode: " + userBarcode);
+                    }
+                    break;
+
+                case 2: // Manager Cancel Membership
+                    System.out.print("Enter user barcode to cancel membership: ");
+                    String cancelBarcode = scanner.nextLine();
+                    User userToCancel = database.getData(cancelBarcode);
+
+                    if (userToCancel != null) {
+                        System.out.println("User found: " + userToCancel.getName());
+                        if (userToCancel.isRegistered()) {
+                            userToCancel.cancelMembership();
+                            System.out.println(userToCancel.getName() + "'s membership has been canceled.");
+                        } else {
+                            System.out.println(userToCancel.getName() + "'s membership is already canceled.");
+                        }
+                    } else {
+                        System.out.println("No user found with barcode: " + cancelBarcode);
+                    }
+                    break;
+
+                case 3: // Exit
+                    System.out.println("Exiting the system. Goodbye!");
+                    scanner.close();
+                    return;
+
+                default:
+                    System.out.println("Invalid choice. Please try again.");
+                    break;
+            }
         }
-        System.out.println(user.getName() + " is registered: " + user.isRegistered());
-
-        System.out.println("\n=== End of Use Case 2 ===");
     }
 }
