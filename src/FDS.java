@@ -247,10 +247,12 @@ public class FDS {
         Database database = new Database();
         User user1 = new User("John Doe", "123 Main St", "123", "password", "validID", true, false);
         User user2 = new User("Jane Smith", "456 Elm St", "456", "securePassword", "validID2", true, false);
+        Manager manager = new Manager("Alice Johnson", "789 Oak St", "789", "adminPassword", "validID3", 789, "Manager");
 
         // Adding hardcoded users to the database
         database.storeData(user1);
         database.storeData(user2);
+        database.storeData(manager);
 
         while (true) {
             System.out.println("\n=== Gym Management System ===");
@@ -280,6 +282,27 @@ public class FDS {
                     break;
 
                 case 2: // Manager Cancel Membership
+                    System.out.println("What is your staff barcode?");
+                    String staffBarcode = scanner.nextLine();
+                    User staff = database.getData(staffBarcode);
+                    if (staff != null) {
+                        System.out.println("Staff found: " + staff.getName());
+                        if (staff instanceof Manager) {
+                            System.out.println("What is your password?");
+                            String password = scanner.nextLine();
+                            if (!staff.getUserPassword().equals(password)) {
+                                System.out.println("Incorrect password. Access denied.");
+                                break;
+                            }
+                            System.out.println("Manager verified. Proceeding to cancel membership.");
+                        } else {
+                            System.out.println("Staff is not a manager. Access denied.");
+                            break;
+                        }
+                    } else {
+                        System.out.println("No staff found with barcode: " + staffBarcode);
+                        break;
+                    }
                     System.out.print("Enter user barcode to cancel membership: ");
                     String cancelBarcode = scanner.nextLine();
                     User userToCancel = database.getData(cancelBarcode);
